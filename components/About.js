@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div className='mt-40'>
         <div><h4>About</h4></div>
-        <div>
+        <div className='flex'>
             <div>
             <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile'></img>
             </div>
