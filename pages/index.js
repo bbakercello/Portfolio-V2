@@ -1,6 +1,24 @@
+import React from "react"
+import Nav from "../components/Nav"
+import Home from "../components/Home"
+import About from "../components/About"
+import Skills from "../components/Skills"
+import Work from "../components/Work"
+import Contact from "../components/Contact"
+
+
 function Homepage() {
     return (
-      <h1 className="text-center my-24 font-black tracking-tight text-6xl">Hi</h1>
+      <div>
+        <Nav/>
+        <div className="bg-slate-200">
+        <Home/>
+        <About/>
+        <Skills/>
+        <Work/>
+        <Contact/>
+        </div>
+      </div>
     )
   }
   
