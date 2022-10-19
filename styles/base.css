@@ -6,6 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p{
+    font-weight: lighter;
+}
 .nav {
     font-weight:600;
 }
