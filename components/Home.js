@@ -7,11 +7,11 @@ const Home = () => {
     <div className='flex pt-10 justify-around'>
         <div>
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
-        <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-teal-700'>Ben</span></h2>
+        <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-sky-700'>Ben</span></h2>
         <h2 className='text-4xl font-bold mb-3'>Software Engineer</h2>
         <div className='flex mt-2 '>
-            <button className='w-20  h-8 bg-teal-700 self-center rounded-lg text-sm text-slate-200'>Contact</button>
-            <button className='w-40 h-8 bg-teal-700 ml-2 self-center rounded-lg text-sm text-slate-200'>Download Resume</button>
+            <button className='w-20  h-8 bg-sky-700 self-center rounded-lg text-sm text-slate-200'>Contact</button>
+            <button className='w-40 h-8 bg-sky-700 ml-2 self-center rounded-lg text-sm text-slate-200'>Download Resume</button>
         </div>
         
         
