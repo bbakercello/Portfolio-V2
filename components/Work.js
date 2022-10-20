@@ -22,7 +22,7 @@ const Work = () => {
     {work.map((work,index) =>  {
         return(
                 <div>
-                    <a className='grid justify-items-stretch border-solid border-2 border-sky-700 w-40' href={work.href}>
+                    <a className='ease-in duration-300 rounded-lg grid justify-items-stretch hover:border-solid hover:border-2 border-sky-700 hover:text-lg hover:font-bold w-40 hover:w-60 hover:bg-slate-100' href={work.href}>
                     <h6 className='justify-self-center'>{work.name}</h6>
                     <img clasName='' src={work.background} alt='background'></img>
                     </a>
