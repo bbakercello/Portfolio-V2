@@ -25,87 +25,90 @@ const Skills = () => {
                 <h6 className='font-bold'>Professional Skills</h6>
             <ul>
                 
-                <li>
+                <li classname='bg-slate-400'>
                     <div classname='flex'>
-                        <span>JAVASCRIPT</span>
-                        <span> <FontAwesomeIcon icon={faJs}/></span>                        
+                        <span> <FontAwesomeIcon icon={faJs}/></span> 
+                        <span> JAVASCRIPT</span>                       
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
-                        <span>PYTHON</span>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                         <span> <FontAwesomeIcon icon={faPython}/></span>
+                        <span> PYTHON</span>
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
-                        <span>Tailwindcss</span>
-                        <span> <FontAwesomeIcon icon={faTailwind}/></span>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
+                        <span> <FontAwesomeIcon icon={faNodeJs}/></span> 
+                        <span> NODEJS</span>
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
+                        <span> <FontAwesomeIcon icon={faReact}/></span>
+                        <span> REACT</span>
+                    </div>
+                    
+                </li>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span>NextJS</span>
                        <span> <FontAwesomeIcon icon={faNextjs}/></span> 
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                         <span>DJANGO</span>
                         <span> <FontAwesomeIcon icon={faDjango}/></span>
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span>POSTGRESQL</span>
                        <span> <FontAwesomeIcon icon={faPostgresql}/></span> 
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span>MONGODB</span>
                        <span> <FontAwesomeIcon icon={faMongodb}/></span> 
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
-                       <span>GIT</span>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
+                        <span>Tailwindcss</span>
+                        <span> <FontAwesomeIcon icon={faTailwind}/></span>
+                    </div>
+                    
+                </li>
+                
+                
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span> <FontAwesomeIcon icon={faGithubSquare}/></span> 
+                       <span> GIT</span>
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
-                       <span>NODEJS</span>
-                       <span> <FontAwesomeIcon icon={faNodeJs}/></span> 
-                    </div>
-                    
-                </li>
-                <li>
-                    <div classname='flex'>
-                        <span>REACT</span>
-                        <span> <FontAwesomeIcon icon={faReact}/></span>
-                    </div>
-                    
-                </li>
-                <li>
-                    <div classname='flex'>
-                       <span>HTML5</span>
+                
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span> <FontAwesomeIcon icon={faHtml5}/></span> 
+                       <span> HTML5</span>
                     </div>
                     
                 </li>
-                <li>
-                    <div classname='flex'>
-                       <span>CSS</span>
+                <li classname='bg-slate-400'>
+                    <div classname='flex bg-slate'>
                        <span> <FontAwesomeIcon icon={faCss3}/></span> 
+                       <span> CSS</span>
                     </div>
                 </li>
             </ul>
