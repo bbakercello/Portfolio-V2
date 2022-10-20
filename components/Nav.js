@@ -4,7 +4,7 @@ import {Link} from 'react-scroll/modules'
 const Nav = () => {
   return (
     
-    <div className='nav lg: scale-100 text-xs flex p-3 justify-around fixed top-0 left-0 right-0 z-10 bg-slate-100 rounded-lg h-12'>
+    <div className='nav lg: scale-125 text-xs md:text-base flex p-3 justify-around fixed top-0 left-0 right-0 z-10 bg-slate-100 rounded-lg h-12'>
         <ul className='text-left'>
             <li className='pt-1'>Ben</li>
         </ul>
