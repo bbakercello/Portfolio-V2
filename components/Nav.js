@@ -4,9 +4,9 @@ import {Link} from 'react-scroll/modules'
 const Nav = () => {
   return (
     
-    <div className='nav text-xs flex p-3 justify-around fixed top-0 left-0 right-0 z-10 bg-slate-100 rounded-lg h-12'>
+    <div className='nav lg: scale-100 text-xs flex p-3 justify-around fixed top-0 left-0 right-0 z-10 bg-slate-100 rounded-lg h-12'>
         <ul className='text-left'>
-            <li className=''>Ben</li>
+            <li className='pt-1'>Ben</li>
         </ul>
         <div className='flex'>
             <button className='pl-4 hover:underline'><Link activeClass='active' to='home' spy={true} smooth={true} offset={50} duration={500}>Home</Link></button>

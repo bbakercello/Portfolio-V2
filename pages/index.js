@@ -9,9 +9,9 @@ import Contact from "../components/Contact"
 
 function Homepage() {
     return (
-      <div>
+      <div className="">
         <Nav/>
-        <div className="bg-slate-200 pb-20">
+        <div className="bg-slate-200 pb-20 w-screen">
         <Home/>
         <About />
         <Skills/>

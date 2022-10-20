@@ -3,13 +3,13 @@ import React from 'react'
 const About = () => {
   return (
    
-    <div  id='about' className='mt-20'>
+    <div  id='about' className='lg:scale-125 lg:p-20 mt-10 sm:mt-20 '>
         
         <div className='text-sky-700 flex justify-around text-2xl  underline'>
             <h4 className='font-bold'>About</h4>
         </div>
-        <div className='flex justify-around mt-10'>
-            <div className=''>
+        <div className='grid justify-center sm:flex sm:justify-around lg-justify-evenly mt-10'>
+            <div className='grid justify-center'>
             <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile' className='w-60 rounded-lg'></img>
             </div>
             <div className='w-80'>
