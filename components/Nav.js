@@ -1,17 +1,19 @@
 import React from 'react'
 
+import {Link} from 'react-scroll/modules'
 const Nav = () => {
   return (
-    <div className='nav text-xs flex p-3 justify-around'>
+    
+    <div className='nav text-xs flex p-3 justify-around fixed top-0 left-0 right-0 z-10 bg-slate-100 rounded-lg h-12'>
         <ul className='text-left'>
             <li className=''>Ben</li>
         </ul>
         <div className='flex'>
-            <div className='pl-4'>Home</div>
-            <div className='pl-4'>About</div>
-            <div className='pl-4'>Skills</div>
-            <div className='pl-4'>Work</div>
-            <div className='pl-4'>Contact</div>
+            <button className='pl-4 hover:underline'><Link activeClass='active' to='home' spy={true} smooth={true} offset={50} duration={500}>Home</Link></button>
+            <button className='pl-4 hover:underline'><Link activeClass='active' to='about' spy={true} smooth={true} offset={50} duration={500}>About</Link></button>
+            <button className='pl-4 hover:underline'><Link activeClass='active' to='skills' spy={true} smooth={true} offset={50} duration={500}>Skills</Link></button>
+            <button className='pl-4 hover:underline'><Link activeClass='active' to='work' spy={true} smooth={true} offset={50} duration={500}>Work</Link></button>
+            <button className='pl-4 hover:underline'><Link activeClass='active' to='contact' spy={true} smooth={true} offset={50} duration={500}>Contact</Link></button>
         </div>
     </div>
    

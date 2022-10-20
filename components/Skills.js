@@ -4,14 +4,13 @@ import { faHtml5 } from '@fortawesome/fontawesome-free-brands';
 import { faCss3 } from '@fortawesome/fontawesome-free-brands';
 import { faJs } from '@fortawesome/fontawesome-free-brands';
 import { faPython } from '@fortawesome/fontawesome-free-brands';
-import { faTailwind } from '@fortawesome/fontawesome-free-brands';
-import { faMongodb } from '@fortawesome/fontawesome-free-brands';
+import { faWind } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faNodeJs } from '@fortawesome/fontawesome-free-brands';
 import { faGithubSquare} from '@fortawesome/fontawesome-free-brands';
 import { faReact } from '@fortawesome/fontawesome-free-brands';
-import { faNextjs } from '@fortawesome/fontawesome-free-brands';
-import { faDjango } from '@fortawesome/fontawesome-free-brands';
-import { faPostgresql } from '@fortawesome/fontawesome-free-brands';
+import { faTable } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
 
 const skills = [
     {name: 'JAVASCRIPT',
@@ -23,15 +22,15 @@ const skills = [
      {name: 'REACT',
      icon: faReact},
      {name: 'NEXTJS',
-     icon: faNextjs},
+     icon: faJs},
      {name: 'DJANGO',
-     icon: faDjango},
+     icon: faTable},
      {name: 'POSTGRESQL',
-     icon: faPostgresql},
+     icon: faCalendarWeek},
      {name: 'MONGODB',
-     icon: faMongodb},
+     icon: faDatabase},
      {name: 'TAILWINDCSS',
-     icon: faTailwind},
+     icon: faWind},
      {name: 'GIT',
      icon: faGithubSquare},
      {name: 'HTML5',
@@ -42,7 +41,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className='mt-20'>
+    
+    <div id='skills' className='mt-20'>
         <div className='text-sky-700 flex justify-center text-2xl  underline'>
         <h4 className='font-bold'>Skills</h4>
         </div>
@@ -52,7 +52,7 @@ const Skills = () => {
             <ul>
                 {skills.map((skills,index) =>  {
                     return(
-                        <li className='m-2 rounded-lg h-8 flex justify-left pl-3 border-solid border-2 border-sky-700 bg-slate-100 shadow-lg w-80'>
+                        <li key ={index} className='m-2 rounded-lg h-8 flex justify-left pl-3 border-solid border-2 border-sky-700 bg-slate-100 shadow-lg w-80'>
                             <div>
                                 <span className='text-sky-700'> <FontAwesomeIcon icon={skills.icon}/></span> 
                                 <span className='pl-2 text-xs font-bold'> {skills.name}</span>
@@ -65,6 +65,7 @@ const Skills = () => {
         <div className='flex flex-col justify-center'><img src='https://i.imgur.com/KlUfw1D.jpg' alt='picture' className='w-80 rounded-lg grayscale-[50%]'></img></div>
         </div>
      </div>
+ 
 
   )
 }

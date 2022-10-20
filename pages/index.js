@@ -13,12 +13,13 @@ function Homepage() {
         <Nav/>
         <div className="bg-slate-200 pb-20">
         <Home/>
-        <About/>
+        <About />
         <Skills/>
         <Work/>
         <Contact/>
         </div>
       </div>
+      
     )
   }
   
