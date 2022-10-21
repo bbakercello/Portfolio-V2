@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 
 function Homepage() {
     return (
-      <div className="bg-slate-400">
+      <div className="container bg-slate-400">
         <Nav/>
         <div className="bg-slate-100  container rounded-lg">
         <Home/>
