@@ -62,7 +62,7 @@ const Skills = () => {
                 })}
             </ul>
         </div>
-        <div className='flex flex-col justify-center pt-5'><img src='https://i.imgur.com/KlUfw1D.jpg' alt='picture' className='w-80 rounded-lg grayscale-[50%] shadow-lg'></img></div>
+        <div className='flex flex-col justify-center pt-5'><img src='https://i.imgur.com/KlUfw1D.jpg' alt='picture' className='w-80 rounded-lg grayscale-[50%] shadow-lg self-center'></img></div>
         </div>
      </div>
  
