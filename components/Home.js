@@ -37,7 +37,7 @@ const Home = () => {
 	              <path fill="#0369a1" d="M427,284.5Q439,329,396,347Q353,365,324.5,388.5Q296,412,258,419.5Q220,427,177.5,424.5Q135,422,90.5,401.5Q46,381,50,330Q54,279,60,241Q66,203,81.5,169.5Q97,136,111,88Q125,40,172.5,44Q220,48,258.5,56.5Q297,65,341,72Q385,79,400.5,120.5Q416,162,415.5,201Q415,240,427,284.5Z" />
             </svg>
             </div>
-          <img src='https://i.imgur.com/fve5JWA.png' alt='Profile Photo' className='relative invisible w-1 sm:visible sm:w-60 row-start-1 row-span-1'></img>
+          <img src='https://i.imgur.com/fve5JWA.png' alt='Profile Photo' className='relative invisible sm:visible sm:w-60'></img>
           </div>
         </div>
         

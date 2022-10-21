@@ -9,9 +9,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    container: {
-    center: true,
-  },
     extend: {fontFamily: {
       'sans': 'Helvetica, Arial, sans-serif',
     },},
@@ -21,13 +18,7 @@ module.exports = {
       'secondary': '##0284c7',
       'danger': '#0ea5e9',
   }),
-  container: {
-    center: true,
-  },
-    
-  },
-  variants: {
-    extend: {},
+
   },
   plugins: [],
 }

@@ -9,9 +9,10 @@ import Footer from "../components/Footer"
 
 function Homepage() {
     return (
-      <div className="container bg-slate-400">
+      
+      <div className="">
         <Nav/>
-        <div className="bg-slate-100  container rounded-lg">
+        <div className="bg-slate-100 rounded-lg">
         <Home/>
         <About />
         <Skills/>
@@ -20,6 +21,7 @@ function Homepage() {
         <Footer/>
         </div>
       </div>
+     
       
     )
   }
