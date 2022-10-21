@@ -23,9 +23,10 @@ const Work = () => {
     {work.map((work,index) =>  {
         return(
                 <div className='flex p-3 justify-center sm:p-3'key={index}>
+                    
                     <a className='ease-in duration-300 rounded-lg grid justify-items-stretch hover:border-solid hover:border-2 border-sky-700 hover:text-lg hover:font-bold w-40 hover:w-60 hover:bg-slate-100 hover:shadow-lg' href={work.href} target="_blank" >
                     <h6 className='font-bold font-italic justify-self-center pb-10'>{work.name}</h6>
-                    <img className='scale-150 mb-4 shadow-lg rounded-lg' src={work.background} alt='background'></img>
+                    <img className=' scale-150 mb-4 shadow-lg rounded-lg' src={work.background} alt='background'></img>
                     </a>
                 </div>
         )
