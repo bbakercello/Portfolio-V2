@@ -3,9 +3,9 @@ import React from 'react'
 import {Link} from 'react-scroll/modules'
 const Nav = () => {
   return (
-    <div className='fixed top-0 left-0 right-0 z-10 shadow-lg'>
-    <div className='nav lg: scale-100 text-xs md:text-base flex p-3 justify-around bg-slate-200 rounded-lg h-12'>
-        <ul className='text-left'>
+    <div className='fixed z-10 top-0 left-0 right-0 shadow-lg w-full'>
+    <div className='nav relative lg:scale-100 text-xs md:text-base flex p-3 justify-around bg-slate-200 rounded-lg h-12'>
+        <ul>
             <li className='pt-1'>Ben</li>
         </ul>
         <div className='flex'>

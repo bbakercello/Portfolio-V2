@@ -9,9 +9,9 @@ import Footer from "../components/Footer"
 
 function Homepage() {
     return (
-      <div className="">
+      <div className="bg-slate-400">
         <Nav/>
-        <div className="bg-slate-100 w-screen">
+        <div className="bg-slate-100  container rounded-lg">
         <Home/>
         <About />
         <Skills/>
