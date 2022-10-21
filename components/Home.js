@@ -7,7 +7,7 @@ import {Link} from 'react-scroll/modules'
 const Home = () => {
     
   return (
-    <div id='home'className='lg:scale-125 lg:p-20 grid justify-center sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
+    <div id='home'className='lg:scale-125 lg:p-20 grid justify-center sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10 '>
         <div>
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
         <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-sky-700'>Ben</span></h2>
@@ -20,12 +20,13 @@ const Home = () => {
         
             <div className='flex justify-between w-20 mt-6'>
                 <a target="_blank" className='text-xl text-sky-700 hover: text-sky-600'href='https://www.linkedin.com/in/ben-baker-software/'><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a target="_blank" className='text-xl text-sky-700 hover: text-sky-600'href='https://github.com/bbakercello'><FontAwesomeIcon icon={faGithub}/></a>
+                <a target="_blank" className='text-xl text-sky-700 hover: text-sky-600'href='https://github.com/bbakercello  '><FontAwesomeIcon icon={faGithub}/></a>
             </div>
             </div>
         <div>
-        <img src='https://i.imgur.com/fve5JWA.png' alt='Profile Photo' className='invisible w-1 sm:visible sm:w-60'></img>
+          <img src='https://i.imgur.com/fve5JWA.png' alt='Profile Photo' className='invisible w-1 sm:visible sm:w-60 row-start-1 row-span-1'></img>
         </div>
+        
     </div>
   )
 }

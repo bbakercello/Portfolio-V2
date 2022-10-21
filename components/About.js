@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className='grid justify-center sm:flex sm:justify-around lg-justify-evenly mt-10'>
             <div className='grid justify-center'>
-            <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile' className='w-60 rounded-lg'></img>
+            <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile' className='w-60 rounded-lg shadow-lg'></img>
             </div>
             <div className='w-80'>
                 <h6 className='pt-6 font-bold'>Ben Baker</h6>

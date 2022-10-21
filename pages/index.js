@@ -5,18 +5,19 @@ import About from "../components/About"
 import Skills from "../components/Skills"
 import Work from "../components/Work"
 import Contact from "../components/Contact"
-
+import Footer from "../components/Footer"
 
 function Homepage() {
     return (
       <div className="">
         <Nav/>
-        <div className="bg-slate-100 pb-20 w-screen">
+        <div className="bg-slate-100 w-screen">
         <Home/>
         <About />
         <Skills/>
         <Work/>
         <Contact/>
+        <Footer/>
         </div>
       </div>
       
