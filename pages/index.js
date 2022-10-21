@@ -11,7 +11,7 @@ function Homepage() {
     return (
       <div className="">
         <Nav/>
-        <div className="bg-slate-200 pb-20 w-screen">
+        <div className="bg-slate-100 pb-20 w-screen">
         <Home/>
         <About />
         <Skills/>
