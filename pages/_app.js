@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from "next/document";
 
 
 function MyApp({ Component, pageProps }) {
-  return <Component className=''{...pageProps} />
+  return <Component {...pageProps} />
 }
 
 export default MyApp

@@ -12,7 +12,7 @@ function Homepage() {
       
       <div>
         <Nav/>
-        <div className="bg-slate-100 rounded-lg">
+        <div className="lg:ml-40 bg-slate-100 rounded-lg ">
         <Home/>
         <About />
         <Skills/>
