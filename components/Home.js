@@ -7,7 +7,7 @@ import {Link} from 'react-scroll/modules'
 const Home = () => {
     
   return (
-    <div id='home'className='lg:scale-125 lg:p-20 lg:mt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
+    <div id='home'className='lg:scale-125 lg:pt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
         <div className='grid justify-center'>
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
         <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-sky-700'>Ben</span></h2>
@@ -30,7 +30,7 @@ const Home = () => {
                 <a target="_blank" className='text-xl text-sky-700 hover:text-sky-600 hover:scale-125'href='https://github.com/bbakercello  '><FontAwesomeIcon icon={faGithub}/></a>
             </div>
             </div>
-        <div className='h-1 sm:h-auto invisible sm:visible'>
+        <div className='h-1 sm:h-auto invisible w-0 sm:w-auto sm:visible'>
         <div className='relative invisible sm:visible'>
             <div className='absolute inset-0 scale-150 rotate-180 invisible sm:visible'>
             <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"  >
