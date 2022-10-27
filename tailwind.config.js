@@ -3,6 +3,7 @@ const { slate } = require('tailwindcss/colors');
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  darkMode: 'media',
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}'

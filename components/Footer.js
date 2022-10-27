@@ -7,7 +7,7 @@ const Footer = () => {
 
 
   return (
-    <div className='bg-sky-700 rounded-t-lg'>
+    <div className='bg-sky-700 rounded-t-lg dark:bg-sky-700'>
     <h6 className='flex justify-center text-sm text-sky-100 font-bold mt-8 pt-5 pb-1'>Ben Baker</h6>
     <h6 className='flex justify-center text-sm text-sky-100 pb-4'>{year}</h6>
     </div>
