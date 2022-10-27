@@ -11,7 +11,7 @@ const Contact = () => {
     
   return (
     
-    <div id='contact' className='dark:bg-gray-800 lg:scale-125 flex justify-center dark:bg-gray-800'>
+    <div id='contact' className='lg:scale-125 flex justify-center'>
          <Popover className='pb-10 mt-20 flex-col'>
       {({ open }) => (
         /* Use the `open` state to conditionally change the direction of the chevron icon. */

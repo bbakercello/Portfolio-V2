@@ -7,7 +7,7 @@ import {Link} from 'react-scroll/modules'
 const Home = () => {
     
   return (
-    <div id='home'className='dark:bg-gray-800 lg:scale-125 lg:pt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
+    <div id='home'className='lg:scale-125 lg:pt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
         <div className='grid justify-center'>
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
         <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-sky-700'>Ben</span></h2>
