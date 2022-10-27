@@ -17,7 +17,7 @@ const Work = () => {
     return(
         
         <div className='lg:scale-125 lg:p-20 mt-20 flex-col justify-center'>
-            <h6 id='work' className='text-sky-700 flex justify-center text-2xl  underline font-bold mb-10'>Work</h6>
+            <h6 id='work' className='select-none text-sky-700 flex justify-center text-2xl  underline font-bold mb-10'>Work</h6>
         <ul className='md:flex  md:justify-around sm:grid sm:justify-around lg-justify-evenly'>
             
     {work.map((work,index) =>  {
