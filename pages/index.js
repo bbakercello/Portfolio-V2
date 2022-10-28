@@ -7,9 +7,9 @@ import Work from "../components/Work"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
+
 function Homepage() {
     return (
-      
       <div>
         <Nav/>
         <div className="bg-slate-100 lg:mr-0 rounded-lg ">
@@ -21,8 +21,6 @@ function Homepage() {
         <Footer/>
         </div>
       </div>
-     
-      
     )
   }
   

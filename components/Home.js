@@ -3,14 +3,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faLinkedin } from '@fortawesome/fontawesome-free-brands';
 import {Link} from 'react-scroll/modules'
+import {motion} from 'framer-motion'
+import { AnimatePresence } from 'framer-motion';
 
-const Home = () => {
+const Home = ({isVisible}) => {
     
   return (
+    
     <div id='home'className='lg:scale-125 lg:pt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
         <div className='grid justify-center'>
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
-        <h2 className='text-4xl font-bold mb-3'>I'm <span className='text-sky-700'>Ben</span></h2>
+        <h2 className='text-4xl font-bold mb-3'>I'm 
+        
+
+
+        <span className='text-sky-700'> Ben</span>
+        
+        </h2>
         <h2 className='text-4xl font-bold mb-3'>Software Engineer</h2>
         <div className='flex mt-2 '>
             <div className='relative mr-4'>
@@ -30,17 +39,25 @@ const Home = () => {
                 <a target="_blank" className='text-xl text-sky-700 hover:text-sky-600 hover:scale-125'href='https://github.com/bbakercello  '><FontAwesomeIcon icon={faGithub}/></a>
             </div>
             </div>
+            
         <div className='h-1 sm:h-auto invisible w-0 sm:w-auto sm:visible'>
+       
         <div className='relative invisible sm:visible'>
+        
             <div className='absolute inset-0 scale-150 rotate-180 invisible sm:visible'>
+            <motion.div
+              animate={{ x: [1, 4, 0], }}
+            >
             <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"  >
 	              <path fill="#0369a1" d="M427,284.5Q439,329,396,347Q353,365,324.5,388.5Q296,412,258,419.5Q220,427,177.5,424.5Q135,422,90.5,401.5Q46,381,50,330Q54,279,60,241Q66,203,81.5,169.5Q97,136,111,88Q125,40,172.5,44Q220,48,258.5,56.5Q297,65,341,72Q385,79,400.5,120.5Q416,162,415.5,201Q415,240,427,284.5Z" />
             </svg>
+            </motion.div>
             </div>
+    
           <img src='https://i.imgur.com/fve5JWA.png' alt='Profile Photo' className='relative invisible sm:visible sm:w-60'></img>
-          </div>
+          </div> 
         </div>
-        
+       
     </div>
   )
 }
