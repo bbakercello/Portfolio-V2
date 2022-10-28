@@ -43,7 +43,7 @@ const skills = [
 const Skills = () => {
   return (
     
-    <div className='lg:scale-125 lg:p-20 mt-20'id='skills'>
+    <div className='select-none lg:scale-125 lg:p-20 mt-20'id='skills'>
         <div className='text-sky-700 flex justify-center text-2xl  underline'>
         <h4 className='font-bold'>Skills</h4>
         </div>

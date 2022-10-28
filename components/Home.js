@@ -12,13 +12,12 @@ const Home = ({isVisible}) => {
     
     <div id='home'className='lg:scale-125 lg:pt-20 sm:flex pt-12 sm:justify-around lg:justify-evenly mt-10'>
         <div className='grid justify-center '>
-        <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
-        <h2 className='text-4xl font-bold mb-3'>I'm 
-        
-        <span className='text-sky-700'> Ben</span>
-        
+        <h2 className='select-none text-4xl font-bold mb-3'>Hi,</h2>
+        <h2 className='select-none text-4xl font-bold mb-3'>I'm 
+        <span className='select-none text-sky-700'> Ben</span>
         </h2>
-        <h2 className='text-4xl font-bold mb-3'>Software Engineer</h2>
+        <h2 className='select-none text-4xl font-bold mb-3'>Software Engineer</h2>
+
         <div className='flex mt-2 '>
             <div className='relative mr-4'>
               <div className='absolute inset-0 bg-sky-700 blur rounded-lg'></div>

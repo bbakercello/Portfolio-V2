@@ -6,7 +6,7 @@ const Nav = () => {
     <div className='fixed z-10 top-0 left-0 right-0 shadow-lg '>
     <div className='nav text-xs md:text-base flex p-3 justify-around bg-slate-100 rounded-lg h-12'>
         <ul>
-            <li className='pt-1'>Ben</li>
+            <li className='pt-1 select-none'>Ben</li>
         </ul>
         <div className='flex'>
             <button className='pl-4 hover:underline'><Link activeClass='active' to='home' spy={true} smooth={true} offset={50} duration={500}>Home</Link></button>
