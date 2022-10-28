@@ -15,8 +15,6 @@ const Home = ({isVisible}) => {
         <h2 className='text-4xl font-bold mb-3'>Hi,</h2>
         <h2 className='text-4xl font-bold mb-3'>I'm 
         
-
-
         <span className='text-sky-700'> Ben</span>
         
         </h2>

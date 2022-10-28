@@ -14,6 +14,7 @@ const work = [
 ]
 
 const Work = () => {
+    
     return(
         
         <div className='lg:scale-125 lg:p-20 mt-20 flex-col justify-center'>

@@ -11,6 +11,7 @@ import { faGithubSquare} from '@fortawesome/fontawesome-free-brands';
 import { faReact } from '@fortawesome/fontawesome-free-brands';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
+import {motion} from 'framer-motion'
 
 const skills = [
     {name: 'JAVASCRIPT',
@@ -52,12 +53,16 @@ const Skills = () => {
             <ul className=''>
                 {skills.map((skills,index) =>  {
                     return(
+                        <>
+                        <motion.div whileHover={{ scale: 1.2 }}>
                         <li key ={index} className='m-2 rounded-lg h-8 flex justify-left pl-3 border-solid border-2 border-sky-700 bg-slate-100 shadow-lg w-80'>
                             <div>
                                 <span className='text-sky-700'> <FontAwesomeIcon icon={skills.icon}/></span> 
                                 <span className='pl-2 text-xs font-bold'> {skills.name}</span>
                             </div>
                         </li>
+                        </motion.div>
+                        </>
                     )
                 })}
             </ul>
