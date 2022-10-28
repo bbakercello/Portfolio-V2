@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faLinkedin } from '@fortawesome/fontawesome-free-brands';
 import {Link} from 'react-scroll/modules'
 import {motion} from 'framer-motion'
-import { AnimatePresence } from 'framer-motion';
+
 
 const Home = ({isVisible}) => {
     
