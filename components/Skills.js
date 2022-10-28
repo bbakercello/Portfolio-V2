@@ -1,46 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5 } from '@fortawesome/fontawesome-free-brands';
-import { faCss3 } from '@fortawesome/fontawesome-free-brands';
-import { faJs } from '@fortawesome/fontawesome-free-brands';
-import { faPython } from '@fortawesome/fontawesome-free-brands';
-import { faWind } from '@fortawesome/free-solid-svg-icons'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faNodeJs } from '@fortawesome/fontawesome-free-brands';
-import { faGithubSquare} from '@fortawesome/fontawesome-free-brands';
-import { faReact } from '@fortawesome/fontawesome-free-brands';
-import { faTable } from '@fortawesome/free-solid-svg-icons';
-import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
 import {motion} from 'framer-motion'
 
-const skills = [
-    {name: 'JAVASCRIPT',
-     icon: faJs},
-    {name: 'PYTHON',
-     icon: faPython},
-     {name: 'NODEJS',
-     icon: faNodeJs},
-     {name: 'REACT',
-     icon: faReact},
-     {name: 'NEXTJS',
-     icon: faJs},
-     {name: 'DJANGO',
-     icon: faTable},
-     {name: 'POSTGRESQL',
-     icon: faCalendarWeek},
-     {name: 'MONGODB',
-     icon: faDatabase},
-     {name: 'TAILWINDCSS',
-     icon: faWind},
-     {name: 'GIT',
-     icon: faGithubSquare},
-     {name: 'HTML5',
-     icon: faHtml5},
-     {name: 'CSS',
-     icon: faCss3},  
-]
 
-const Skills = () => {
+const Skills = (props) => {
   return (
     
     <div className='select-none lg:scale-125 lg:p-20 mt-20'id='skills'>
@@ -51,7 +14,7 @@ const Skills = () => {
             <div className=''>
                 <h6 className='font-bold self-center'>Professional Skills</h6>
             <ul className=''>
-                {skills.map((skills,index) =>  {
+                {props.skills.map((skills,index) =>  {
                     return(
                         <>
                         <motion.div whileHover={{ scale: 1.2 }}>
