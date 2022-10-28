@@ -12,13 +12,6 @@ module.exports = {
     extend: {fontFamily: {
       'sans': 'Helvetica, Arial, sans-serif',
     },},
-  
-    gradientColorStops: theme => ({
-      'primary': '##0369a1',
-      'secondary': '##0284c7',
-      'danger': '#0ea5e9',
-  }),
-
   },
   plugins: [],
 }

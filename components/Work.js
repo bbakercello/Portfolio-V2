@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
+
 
 const work = [
     {name: 'Body Bell Records',
@@ -14,7 +17,7 @@ const work = [
 ]
 
 const Work = () => {
-    
+
     return(
         
         <div className='lg:scale-125 lg:p-20 mt-20 flex-col justify-center'>
@@ -24,11 +27,12 @@ const Work = () => {
     {work.map((work,index) =>  {
         return(
                 <div className='flex p-3 justify-center sm:p-3'key={index}>
-                    
-                    <a className='ease-in duration-300 rounded-lg grid justify-items-stretch hover:border-solid hover:border-2 border-sky-700 hover:text-lg hover:font-bold w-40 hover:w-60 hover:bg-slate-100 hover:shadow-lg' href={work.href} target="_blank" >
-                    <h6 className='font-bold font-italic justify-self-center pb-10'>{work.name}</h6>
+                    <motion.div whileHover={{ scale: 1.2 }}>
+                    <a className='ease-in duration-300 rounded-lg grid justify-items-stretch border-sky-700 w-40  hover:shadow-lg' href={work.href} target="_blank" >
+                    <h6 className='font-bold font-italic justify-self-center pb-10 h-6'>{work.name}</h6>
                     <img className=' scale-125 mb-4 shadow-lg rounded-lg' src={work.background} alt='background'></img>
                     </a>
+                    </motion.div>
                 </div>
         )
     })}</ul>
