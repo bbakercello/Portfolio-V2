@@ -1,7 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
@@ -60,7 +58,7 @@ const Work = (props) => {
                 group flex justify-center items-center rounded-md bg-sky-700 px-3 h-8 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             ><span>Learn</span></Popover.Button>
             </motion.div>
-          <Popover.Overlay className="fixed inset-0 bg-black opacity-30" />
+          <Popover.Overlay className="fixed inset-1 bg-gradient-to-b from-slate-100 to-sky-700 opacity-30 blur-sm ronded-full" />
           <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -75,13 +73,13 @@ const Work = (props) => {
             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="relative grid justify-center gap-1 bg-white p-3">
                 
-                <div >{work.description}</div>
-                <span className='text-sm'>Technology Used:</span>
-                <div className='text-xs'>{work.tech}</div>
-                <div className='text-sm'>Team:</div>
-                <div className='text-xs'>{work.creators}</div>
+                <div className='font-bold'>{work.description}</div>
+                <span className='text-sm select-none'>Technology Used:</span>
+                <div className='text-xs select-none'>{work.tech}</div>
+                <div className='text-sm select-none'>Team:</div>
+                <div className='text-xs select-none'>{work.creators}</div>
                 <div className='text-sky-700 flex justify-right'>
-                    <motion.div className='pr-2'whileHover={{ x: 100, scale: 1.2}}
+                    <motion.div className='pr-4'whileHover={{ x: 100, scale: 1.2}}
                                 whileTap={{ scale: 0.8 }}
                                 style={{ x: 100 }}>
                                     <a href={work.git}><FontAwesomeIcon icon={props.skills[9].icon}/>
