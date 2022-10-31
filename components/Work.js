@@ -90,7 +90,7 @@ const Work = (props) => {
                                 whileHover={{ x: 100, scale: 1.2}}
                                 whileTap={{ scale: 0.8 }}
                                 style={{ x: 100 }}>
-                                    <a href={work.href}>Sandbox
+                                    <a href={work.href}>Open
                                     </a>
                     </motion.div>
                 </div>
