@@ -18,10 +18,10 @@ const Work = (props) => {
         {name: 'Anonimusic',
          href:'https://vocal-daffodil-44e825.netlify.app/',
          description: 'Anonymous Audio Forum',
-         tech: 'MERN, Cloudinary, React-Audio-Player',
+         tech: 'MERN, Cloudinary, Audio-Player',
         background: 'https://i.imgur.com/mMkPoQ3.jpg',
         git: 'https://github.com/hspinks2692/anonimusic_frontend',
-        creators: 'Harvey Spinks / Tim Rathert / Ben Baker'},
+        creators: 'Harvey Spinks/Tim Rathert/Ben Baker'},
          
         {name: 'LandPost',
          href:'https://landpost.herokuapp.com/blog',
@@ -29,7 +29,7 @@ const Work = (props) => {
          tech: 'Express, Nodejs, HTML, CSS',
         background: 'https://i.imgur.com/NpRstnS.jpg',
         git: 'https://github.com/bbakercello/Landpost',
-        creators: 'David Robles / Victoria Vela / Ben Baker'}
+        creators: 'David Robles/Victoria Vela/Ben Baker'}
     ]
 
     return(
@@ -73,12 +73,12 @@ const Work = (props) => {
             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="relative grid justify-center gap-1 bg-white p-3">
                 
-                <div className='font-bold'>{work.description}</div>
-                <span className='text-sm select-none'>Technology Used:</span>
-                <div className='text-xs select-none'>{work.tech}</div>
-                <div className='text-sm select-none'>Team:</div>
-                <div className='text-xs select-none'>{work.creators}</div>
-                <div className='text-sky-700 flex justify-right'>
+                <div className='font-bold flex justify-center'>{work.description}</div>
+                <span className='work flex justify-center text-sm select-none font-bold'>Technology Used:</span>
+                <div className='work text-xs select-none'>{work.tech}</div>
+                <div className='work flex justify-center text-sm select-none font-bold'>Team:</div>
+                <div className='work text-xs select-none flex justify-center'>{work.creators}</div>
+                <div className='work text-sky-700 flex justify-right'>
                     <motion.div className='pr-4'whileHover={{ x: 100, scale: 1.2}}
                                 whileTap={{ scale: 0.8 }}
                                 style={{ x: 100 }}>

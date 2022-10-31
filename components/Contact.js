@@ -1,35 +1,56 @@
 import React from 'react'
 import { useState } from 'react'
-import { Popover } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import ContactUs from './ContactUs.js'
-
+import { motion } from 'framer-motion'
+import { Popover, Transition } from '@headlessui/react'
+import { Fragment } from 'react'
 
 const Contact = () => {
     
     
   return (
+    <>
     
-    <div id='contact' className='select-none lg:scale-125 flex justify-center'>
-         <Popover className='pb-10 mt-20 flex-col'>
+    <div id='contact' className='select-none lg:scale-125 flex justify-center mt-40'>
+         <Popover className="relative static flex justify-center">
       {({ open }) => (
-        /* Use the `open` state to conditionally change the direction of the chevron icon. */
-        <>
-          <Popover.Button className='w-40 text-sky-700 flex justify-center text-xl  underline font-bold hover:text-sky-500'>
-            Contact 
-            <FontAwesomeIcon icon={faEnvelope} className='pl-3 pt-1' />
-          </Popover.Button>
-          <Popover.Panel>
-          <ContactUs/>
+        <><motion.div whileHover={{ scale: 1.2 }}>
+          <Popover.Button className={`
+                ${open ? '' : 'text-opacity-90'}
+                group flex justify-center items-center rounded-md bg-slate-100 border-sky-700 border-solid border-2 px-3 h-8 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+            ><span className='text-sky-700 font-bold text-xl'>Contact</span></Popover.Button>
+            </motion.div>
+          <Popover.Overlay className="fixed inset-1 opacity-30 blur-sm ronded-full" />
+          <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-1"
+              leaveTo="opacity-0 translate-y-1"
+            >
+            <Popover.Panel className="absolute bottom-0 justify-center left-1/2 z-10 w-64 max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+            
+            <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+              <div className="relative grid justify-center gap-1 bg-white p-3">
+                
+                <ContactUs/>
+                </div>
+                
+                </div>
           </Popover.Panel>
+          </Transition>
         </>
       )}
     </Popover>
-    
     </div>
-    
+    </>
   )
 }
+
+
 
 export default Contact
