@@ -20,8 +20,7 @@ import { faGithubSquare} from '@fortawesome/fontawesome-free-brands';
 import { faReact } from '@fortawesome/fontawesome-free-brands';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
-import { Popover, Transition } from '@headlessui/react'
-
+import { motion, useScroll } from "framer-motion";
 
 
 const skills = [
@@ -52,11 +51,16 @@ const skills = [
 ]
 
 function Homepage() {
-
+  const { scrollYProgress } = useScroll()
+ 
     
     return (
+
       <div>
-        
+        <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
         <Head>
           <title>Ben Baker</title>
           <meta name="Ben Baker" content="Check out my portfolio designed with NextJS and Tailwindcss to find more about me, my projects, skills and passions."/>
@@ -70,6 +74,7 @@ function Homepage() {
             <Contact/>
             <Footer/>
         </div>
+     
       </div>
     )
   }
