@@ -52,7 +52,8 @@ const Work = (props) => {
                     
                     <Popover className="relative static flex justify-center">
       {({ open }) => (
-        <><motion.div whileHover={{ scale: 1.2 }}>
+        <>
+        <motion.div whileHover={{ scale: 1.2 }}>
           <Popover.Button className={`
                 ${open ? '' : 'text-opacity-90'}
                 group flex justify-center items-center rounded-md bg-sky-700 px-3 h-8 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
