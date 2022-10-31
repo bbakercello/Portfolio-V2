@@ -1,4 +1,6 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+
 
 const About = () => {
   return (
@@ -10,7 +12,18 @@ const About = () => {
         </div>
         <div className='grid justify-center sm:flex sm:justify-around lg-justify-evenly mt-10'>
             <div className='grid justify-center'>
+            <motion.div
+               
+              whileHover={{ scale: 1.1 }}
+              onHoverStart={e => {}}
+              onHoverEnd={e => {}}
+            >
+              <motion.a
+  whileFocus={{ scale: 1.2 }}
+  href="#"
+/>
             <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile' className='w-60 rounded-lg shadow-lg'></img>
+            </motion.div>
             </div>
             <div className='w-80'>
                 <h6 className='pt-6 font-bold'>Ben Baker</h6>

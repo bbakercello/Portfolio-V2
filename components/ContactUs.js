@@ -39,9 +39,6 @@ const ContactUs = () => {
      <input className='rounded-lg mt-2 mb-1 bg-slate-700  text-slate-100 w-16 font-bold pt-2 pb-2'type="submit" value="Send" />
         </motion.div>
     </form>
-    
-
-
     </div>
   );
 };
