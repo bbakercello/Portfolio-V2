@@ -20,6 +20,10 @@ import { faGithubSquare} from '@fortawesome/fontawesome-free-brands';
 import { faReact } from '@fortawesome/fontawesome-free-brands';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
+import { Popover, Transition } from '@headlessui/react'
+
+
+
 const skills = [
   {name: 'JAVASCRIPT',
    icon: faJs},
@@ -52,6 +56,7 @@ function Homepage() {
     
     return (
       <div>
+        
         <Head>
           <title>Ben Baker</title>
           <meta name="Ben Baker" content="Check out my portfolio designed with NextJS and Tailwindcss to find more about me, my projects, skills and passions."/>
