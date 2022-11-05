@@ -22,7 +22,7 @@ const About = () => {
   whileFocus={{ scale: 1.2 }}
   href="#"
 />
-            <img src='https://i.imgur.com/9diMR92.jpg' alt='Profile' className='w-60 rounded-lg shadow-lg'></img>
+            <img src='https://i.imgur.com/TWwaAVD.jpg' alt='Profile' className='w-60 rounded-lg shadow-lg brightness-125'></img>
             </motion.div>
             </div>
             <div className='w-80'>
